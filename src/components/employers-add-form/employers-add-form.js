@@ -1,5 +1,13 @@
 import { Component } from 'react';
-import './employers-add-form.css';
+//import './employers-add-form.css';
+import './employers-add-form.scss'
+import styled from 'styled-components';
+
+const Header = styled.h3`
+    font-size: 35px;
+    text-align: center;
+`
+
 
 class EmployersAddForm extends Component {
     constructor(props) {
@@ -38,7 +46,7 @@ class EmployersAddForm extends Component {
 
         return (
         <div className="app-add-form">
-            <h3>Добавьте нового сотрудника</h3>
+            <Header>Добавьте нового сотрудника</Header>
             <form
                 className="add-form d-flex"
                 onSubmit={this.onSubmit}>
